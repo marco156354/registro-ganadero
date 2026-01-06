@@ -49,7 +49,7 @@ db.collection('becerros').where('arete','==',buscarArete.value)
 .get().then(res=>{
 res.forEach(doc=>{
 lista.innerHTML+=`<li>${doc.data().arete}
-<button onclick="eliminar('${doc.id}','becerros')">Eliminar</button></li>`;
+<button class="eliminar" onclick="eliminar('ID','becerros')">Eliminar</button>
 });
 });
 }
