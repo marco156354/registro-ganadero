@@ -1,0 +1,113 @@
+/* ==========================
+   ESTILO GENERAL
+   ========================== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f2f7f3;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================
+   CONTENEDOR PRINCIPAL
+   ========================== */
+h2, h3 {
+  text-align: center;
+  color: #1b5e20;
+}
+
+body > h2,
+body > h3,
+body > input,
+body > button,
+body > ul {
+  width: 100%;
+  max-width: 380px;
+  margin: 8px auto;
+  display: block;
+}
+
+/* ==========================
+   INPUTS
+   ========================== */
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+/* ==========================
+   BOTONES
+   ========================== */
+button {
+  padding: 12px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* Botón eliminar */
+button.eliminar {
+  background: #c62828;
+}
+
+button.eliminar:hover {
+  background: #8e0000;
+}
+
+/* ==========================
+   LISTA DE REGISTROS
+   ========================== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ==========================
+   ARCHIVO FOTO
+   ========================== */
+input[type="file"] {
+  padding: 8px;
+  background: white;
+}
+
+/* ==========================
+   RESPONSIVO
+   ========================== */
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+}
